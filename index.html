@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">  <!--to be able to use googlefonts-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+
+  <div class="section">
+    <div class="cont">
+      <div class="little-sec">
+        <div class="content">
+          <h1 class="title"> Todo </h1>
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"/></svg>  
+        </div>
+    
+        <div class="todo">
+          <div class="container-input">
+            <input type="text" class="theinput">
+            <div class="fa-container">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <span class="container-task no-task-container">
+            <span class="task"> <span class="no-tasks"> No Tasks To Show </span></span>
+          </span>
+          <!--<i class="fas fa-check-circle"></i>-->
+          <!--<span class="task"> </span>-->
+        </div>
+        <span class="infos-tasks">
+          <ul>
+            <li class="list-all"> <span class="numb numb-All"> 0</span> All</li>
+            <li class="list-active"> <span class="numb numb-active"> 0</span> active</li>
+            <li class="list-completed"> <span class="numb numb-completed"> 0</span> completed</li>
+            <li class="list-clear-completed"> clear completed</li>
+          </ul>
+        </span>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="second-container">
+
+  </div>
+
+
+
+
+  <!-- Add dynamic number --> items left
+
+  All
+  Active 
+  Completed
+
+  Clear Completed
+
+  Drag and drop to reorder list
+
+<!--<div class="attribution">
+   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Your Name Here</a>.
+  </div> -->  
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

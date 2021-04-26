@@ -1,0 +1,264 @@
+* {
+    margin:0 ;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px ;
+
+}
+
+.section {
+    background-image: url(../images/bg-desktop-dark.jpg);
+    background-size: cover ;
+}
+
+
+.section .cont .little-sec{
+    width:450px ;
+    position: absolute;
+    transform: translate(-50px, -50px);
+    left: 35%;
+    top: 50%;
+}
+
+.cont {
+    position: relative;
+    height: 280px;
+    width: 100%;
+}
+
+.section .content {
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.section .title {
+    color: #fff;
+    letter-spacing: 10px;
+    font-weight: 600;
+}
+
+.second-container {
+    width:100% ;
+    height:100vh ;
+    background-color: hsl(235, 21%, 11%);
+}
+
+.todo {
+    width: 100%;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo input{
+    width:100% ;
+    height:55px ;
+    outline: none;
+    border: none;
+    background-color: hsl(235, 24%, 19%);
+    color:hsl(234, 39%, 85%) ;
+    padding:0 28px ;
+}
+
+.todo .task{
+    width: 100%;
+    height: 55px;
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 2px;
+    transition: .5s;
+    color: hsl(234, 39%, 85%);
+    border-bottom: 1px solid hsl(234, 11%, 52%);
+    display: flex;
+    align-items: center;
+    padding:5px 28px ;
+    position: relative;
+}
+
+.todo .task::before {
+    content: "";
+    display: none;
+    position: absolute;
+    width:15px;
+    height:15px ;
+    background-color: #168088;
+}
+
+.todo .container-task {
+    display: flex;
+    align-items: center;
+    position:relative ;
+}
+
+.todo .container-task .toggle {
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    background-color: #2196F3;
+    right: 50px;
+    z-index: 1;
+    transition: .1s;
+    cursor: pointer;
+    border-bottom:hsl(234, 11%, 52%) ;
+    transition: .5s;
+}
+
+.todo .container-task .toggle:hover {
+    background:#15629c ;
+}
+
+.todo .container-task .trash {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background-color: #FF5722;
+    right: 0;
+    z-index: 1;
+    transition: .1s;
+    cursor: pointer;
+    border-bottom:hsl(234, 11%, 52%) ;
+    transition: .5s;
+}
+
+.todo .container-task .trash:hover {
+    background-color: #c04019;
+}
+
+
+.no-tasks {
+    opacity:.4 ;
+}
+
+.no-task-container.hide {
+    display: none;
+}
+
+.todo .container-task .toggle.active {
+    background-color: #009688;
+}
+
+.todo input:not(:first-child) {
+    border-bottom: 1px solid #333;
+}
+
+.todo input:first-child {
+    margin-bottom: 25px ;
+}
+
+.todo .theinput:focus {
+    outline: none;
+}
+
+.container-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.fa-container,.fa-check-trash-container {
+    top: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #009688;
+    width: 10%;
+    height: 69%;
+    cursor: pointer;
+    transition: .5s;
+    
+    /*in order to center the element inside the container , we can use these three preperties on the container*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.fa-container:hover {
+    background-color:#007065 ;
+}
+
+.fa-container:hover .fas {
+    transform: rotate(90deg);
+}
+
+.fa-check-trash-container:hover .fas {
+    transform: rotate(360deg);
+}
+
+.fas {
+    position: absolute;
+    color: #fff;
+    transition: .5s ;
+    pointer-events: none;           /*to stop propagation*/
+}
+
+
+.section .todo .container-task .task:hover .section .todo .container-task .toggle {
+    border: 1px solid #333;
+}
+
+
+
+.section .cont .little-sec .infos-tasks {
+    width:100% ;
+    height:40px ;
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 2px; 
+    transition: .5s;
+    color:hsl(234, 39%, 85%) ;
+    display: none;
+}
+
+ul {
+    height:100% ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:5px 0 ;
+}
+
+ul li {
+    font-size: 12px;
+    text-transform: capitalize;
+    list-style: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+ul li:hover {
+    color:hsl(233, 14%, 35%) ;
+}
+
+.section .cont .little-sec .infos-tasks.active {
+    display: block;
+}
+
+.container-task.active {
+    background-color:hsl(235, 24%, 19%) ;
+    text-decoration: line-through;
+}
+
+/*.overlay {
+    position: absolute;
+    left:0 ;
+    top:0 ;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+
+.box {
+    background: #FF5722;
+    width: calc(100% - 240px);
+    height: 150px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}*/
